@@ -36,7 +36,7 @@ const Home6 = () => {
   };
 
   return (
-    <div className="pricing-container">
+    <div id="pricing" className="pricing-container">
       <div className="pricing-section">
         <div className="header" ref={headerRef}>
           <h2>PRICING PLANS</h2>

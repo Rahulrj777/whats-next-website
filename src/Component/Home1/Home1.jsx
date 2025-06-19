@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home1.css'
-import globe from '../../assets/contact_globe.svg'  // Adjust the path based on your folder
+import globe from '../../assets/contact_globe.svg'  
 
 const Home1 = () => {
   return (
-    <div className="h1-div">
+    <div id="home" className="h1-div">
       
       <img src={globe} alt="rotating globe" className="rotating-img" />
 

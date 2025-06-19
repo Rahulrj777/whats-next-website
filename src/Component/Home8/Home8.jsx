@@ -29,7 +29,7 @@ const Home8 = () => {
   }, []);
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <div className="contact-header" ref={textRef}>
         <h2>Contact Us</h2>
         <p>Reach out to us for more information and personalized assistance with our bulk messaging software</p>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../assets/logo.png';
+import { Link } from 'react-scroll';
 import './Header.css';
 
 const Header = () => {
@@ -15,10 +16,10 @@ const Header = () => {
         </div>
 
         <div className="navlink desktop-only">
-          <span>Home</span>
-          <span>Features</span>
-          <span>Pricing</span>
-          <span>Contact</span>
+          <Link to="home" smooth={true} duration={500}><span>Home</span></Link>
+          <Link to="features" smooth={true} duration={500}><span>Features</span></Link>
+          <Link to="pricing" smooth={true} duration={500}><span>Pricing</span></Link>
+          <Link to="contact" smooth={true} duration={500}><span>Contact</span></Link>
         </div>
 
         <div className="btn desktop-only">

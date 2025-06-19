@@ -34,7 +34,7 @@ const Home2 = () => {
   const images = [img1, img2, img3, img4, img5];
 
   return (
-    <div className="home2-section">
+    <div id="features" className="home2-section">
       {images.map((image, index) => (
         <img
           key={index}
