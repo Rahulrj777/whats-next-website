@@ -8,7 +8,6 @@
   align-items: center;
   gap: 20px;
   background: linear-gradient(to right, #10B981, #065F46);
-
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -52,7 +51,6 @@
   filter: brightness(0.8) contrast(1.1);
   animation: spin 30s linear infinite;
 }
-
 
 /* Animation */
 @keyframes spin {
