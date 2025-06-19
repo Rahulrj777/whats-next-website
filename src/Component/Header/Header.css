@@ -1,0 +1,206 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.nav-logo .logo-img {
+  width: 120px;
+}
+
+.navlink {
+  display: flex;
+  gap: 2rem;
+  padding-left: 120px;
+}
+
+.navlink span {
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navlink span:hover {
+  color: #25D366;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn span:first-child {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background 0.3s;
+}
+
+.btn span:first-child:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn span:last-child {
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(90deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn span:last-child:hover {
+  opacity: 0.8;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.burger-menu .line {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.4s ease;
+}
+
+.burger-menu .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #1a202c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: left 0.4s ease;
+  z-index: 150;
+}
+
+.side-drawer.open {
+  left: 0;
+}
+
+.drawer-logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.drawer-logo img {
+  width: 100px;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.drawer-links span {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.drawer-links span:hover {
+  color: #25D366;
+}
+
+.drawer-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.drawer-buttons span {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drawer-buttons span:first-child {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.drawer-buttons span:last-child {
+  background: linear-gradient(90deg, #25D366, #128C7E);
+  color: white;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+@media (max-width: 992px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-logo .logo-img {
+    width: 100px;
+  }
+
+  .drawer-links span {
+    font-size: 1rem;
+  }
+
+  .drawer-buttons span {
+    font-size: 0.95rem;
+  }
+}

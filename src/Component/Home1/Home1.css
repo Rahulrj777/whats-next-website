@@ -1,0 +1,122 @@
+.h1-div {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40vh 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(to right, #10B981, #065F46);
+
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.h1-p1,
+.h1-p2,
+.h1-p3,
+.h1-p4 {
+  color: white;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+}
+
+.h1-p2,
+.h1-p3 {
+  font-size: 60px;
+}
+
+.h1-p3 {
+  color: yellow;
+}
+
+.h1-p1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.h1-p4 {
+  font-size: 1rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.rotating-img {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 500px;
+  opacity: 0.4;
+  filter: brightness(0.8) contrast(1.1);
+  animation: spin 30s linear infinite;
+}
+
+
+/* Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .h1-p2,
+  .h1-p3 {
+    font-size: 40px;
+  }
+
+  .rotating-img {
+    width: 400px;
+    top: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1-div {
+    padding-top: 25vh;
+  }
+
+  .h1-p1 {
+    font-size: 1rem;
+  }
+
+  .h1-p2,
+  .h1-p3 {
+    font-size: 32px;
+  }
+
+  .h1-p4 {
+    font-size: 0.95rem;
+  }
+
+  .rotating-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-p2,
+  .h1-p3 {
+    font-size: 24px;
+  }
+
+  .h1-p1 {
+    font-size: 0.95rem;
+  }
+
+  .h1-p4 {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .rotating-img {
+    width: 220px;
+    top: 20%;
+  }
+}

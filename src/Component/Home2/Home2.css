@@ -1,0 +1,24 @@
+.home2-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #eef6ff, #ffffff);
+}
+
+.slide-in {
+  width: 240px;
+  height: auto;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.slide-in.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
