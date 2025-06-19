@@ -38,10 +38,10 @@ const Header = () => {
             <img src={logo} alt="Logo" className="logo-img" />
           </div>
           <div className="drawer-links">
-            <span onClick={closeMenu}>Home</span>
-            <span onClick={closeMenu}>Features</span>
-            <span onClick={closeMenu}>Pricing</span>
-            <span onClick={closeMenu}>Contact</span>
+            <Link to="home" smooth={true} duration={500} onClick={closeMenu}><span>Home</span></Link>
+            <Link to="features" smooth={true} duration={500} onClick={closeMenu}><span>Features</span></Link>
+            <Link to="pricing" smooth={true} duration={500} onClick={closeMenu}><span>Pricing</span></Link>
+            <Link to="contact" smooth={true} duration={500} onClick={closeMenu}><span>Contact</span></Link>
           </div>
           <div className="drawer-buttons">
             <span>GET DEMO</span>
