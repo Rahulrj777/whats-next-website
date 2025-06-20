@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './Home2.css';
 
 import img1 from '../../assets/img1.png';
@@ -42,7 +42,7 @@ const Home2 = () => {
           alt={`animated-${index}`}
           className="slide-in"
           ref={el => (imageRefs.current[index] = el)}
-          style={{ transitionDelay: `${index * 0.2}s` }}
+          style={{ transitionDelay: `${index * 0.3}s` }}
         />
       ))}
     </div>

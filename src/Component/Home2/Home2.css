@@ -3,8 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  gap: 32px;
+  padding: 64px 32px;
   background: linear-gradient(to right, #eef6ff, #ffffff);
 }
 
@@ -14,7 +14,7 @@
   border-radius: 12px;
   opacity: 0;
   transform: translateX(-60px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 

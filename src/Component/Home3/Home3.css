@@ -9,7 +9,6 @@
   overflow: hidden;
 }
 
-/* Animation States */
 .home3-left,
 .home3-right {
   transition: all 0.8s ease-out;
@@ -36,7 +35,6 @@
   opacity: 0;
 }
 
-/* Left Image */
 .home3-left {
   flex: 1;
   display: flex;
@@ -50,7 +48,6 @@
   height: auto;
 }
 
-/* Right Text */
 .home3-right {
   flex: 1;
   color: #333;
@@ -85,7 +82,6 @@
   background: #149e13;
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
   .home3-container {
     flex-direction: column;
